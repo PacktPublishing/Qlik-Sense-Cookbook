@@ -1,0 +1,10 @@
+Data:
+LOAD * INLINE [
+    Label, DJ, Next Album Release, Release Year
+    Blunderbuss Records, Kevin Mullaney, The Chat, 2016
+    Weirdo Cats, Heather McKay, Unknown, 
+    Dragon Disks, Rhys Hayward , Unknown, 
+    Caped Capers, Simon Conyers, No Fashion, 2016
+    Shadow Giggles, Ski Mask, Electro Ski, 2015
+    Fiddle Pits, Isabel Franken, Boogie Fingers, 2015
+]; 

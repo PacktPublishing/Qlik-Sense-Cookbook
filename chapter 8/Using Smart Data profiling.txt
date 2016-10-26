@@ -1,0 +1,26 @@
+Transactions:
+LOAD DATE(Date#( TransactionDate,'DD/MM/YYYY')) as TransactionDate ,Sales INLINE [
+    TransactionDate, Sales
+    01/01/2013, 1000
+    02/01/2013, 3000
+    03/01/2013, 500
+    04/01/2013, 4000
+    05/01/2013, 2000
+];
+
+Calendar:
+LOAD DATE(Date#( TransactionDate,'DD/MM/YYYY')) as Date, Month,Year INLINE [
+    Date, Month, Year
+    01/01/2013, Jan, 2013
+    02/01/2013, Jan, 2013
+    03/01/2013, Jan, 2013
+    04/01/2013, Jan, 2013
+    05/01/2013, Jan, 2013
+];
+
+
+STORE Transactions INTO [lib://TestData/Transactions.txt](txt);
+Drop Table Transactions;
+
+STORE Calendar INTO [lib://TestData/Calendar.txt](txt);
+Drop Table Calendar;

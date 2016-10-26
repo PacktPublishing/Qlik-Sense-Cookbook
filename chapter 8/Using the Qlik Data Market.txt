@@ -1,0 +1,5 @@
+ExampleData:
+LOAD * INLINE [
+    Base currency, Sales
+    US dollar, 6300
+];

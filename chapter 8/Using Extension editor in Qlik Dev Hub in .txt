@@ -1,0 +1,8 @@
+Sales:
+LOAD * INLINE [
+Country, Sales
+USA, 1000
+UK, 2000
+France, 3000
+Germany, 4000
+];
